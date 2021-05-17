@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+<parameter name="url" value="https://dev103117.service-now.com"></parameter>
+<parameter name="username" value="admin"></parameter>
+<parameter name="password" value="India@123"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="ticketmanagement.TC001CreateTicket"/>
+      <class name="ticketmanagement.TC002UpdateExsistingTicket"/>
+      <class name="ticketmanagement.TC003AssignExsistingTicket"/>
+      <class name="ticketmanagement.TC004DeleteExsistingTicket"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
